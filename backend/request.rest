@@ -1,0 +1,26 @@
+##GET Note
+GET http://localhost:3000/notes
+
+###Get Note by ID
+GET http://localhost:3000/notes/5
+
+### Create Note
+POST http://localhost:3000/notes-create
+Content-Type: application/json
+
+{
+  "title": "Rencana hari ke 4",
+  "note": "Sama seperti hari ke 3"
+}
+
+### Update Note by ID
+PUT http://localhost:3000/notes/1
+Content-Type: application/json
+
+{
+  "title": "Rencana hari ke 1",
+  "note": "Ngoding, Makan, Mandi, Turu, Ngoding (opsional)"
+}
+
+### Delete Note by ID
+DELETE http://localhost:3000/notes/8
